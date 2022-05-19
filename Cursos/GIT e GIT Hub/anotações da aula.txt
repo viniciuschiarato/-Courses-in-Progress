@@ -1,0 +1,10 @@
+anotações aula 1:
+
+GIT:
+VCS - Software de Controle de Versão 
+(ferramenta de versionamento de software)
+exemplo:
+
+
+GIT Hub:
+Plataforma de Rede Social para Programadores
