@@ -1,7 +1,7 @@
 def fatorial(n=1, show=False):
     """
-    -> Calcule o fatorial de um número
-    :param n: O número a ser calculado
+    -> Calcule o fatorial de um número.
+    :param n: O número a ser calculado.
     :param show: (opcional) Mostrar ou não a memória de cálculo.
     :return: O valor do fatorial de um número n.
     """
@@ -19,3 +19,4 @@ def fatorial(n=1, show=False):
 
 num = int(input('Digite o número para saber seu fatorial: '))
 fatorial(num)
+help(fatorial)
