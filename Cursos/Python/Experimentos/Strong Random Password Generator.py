@@ -1,5 +1,5 @@
 import string
-from random import random, choice
+from random import choice
 database = string.ascii_letters + string.punctuation + string.digits
 length = int(input('Characters length: '))
 password = ''
