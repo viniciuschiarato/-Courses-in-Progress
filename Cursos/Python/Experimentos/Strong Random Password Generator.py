@@ -6,5 +6,3 @@ password = ''
 for v in range(0, length):
     password += choice(database)
 print(password)
-
-
