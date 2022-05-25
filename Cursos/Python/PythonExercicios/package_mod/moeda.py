@@ -20,3 +20,8 @@ def diminuir(n, porcentagem):
     aumento *= porcentagem
     n -= aumento
     return n
+
+
+def moeda(n):
+    float(n)
+    return f'R${n:.2f}'
