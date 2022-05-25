@@ -1,9 +1,11 @@
 def metade(n):
-    return n / 2
+    n /= 2
+    return n
 
 
 def dobro(n):
-    return n * 2
+    n *= 2
+    return n
 
 
 def aumentar(n, porcentagem):
@@ -20,8 +22,3 @@ def diminuir(n, porcentagem):
     aumento *= porcentagem
     n -= aumento
     return n
-
-
-def moeda(n):
-    float(n)
-    return f'R${n:.2f}'
