@@ -52,11 +52,11 @@ def printvalor(valor):
     return f'{valor:10}'
 
 
-def resumo(n1, porc_aum='', porc_dim=''):
+def resumo(n1=0, porc_aum='', porc_dim=''):
     linha()
-    print(f'{"RESUMO DO VALOR":^30}')
+    print('RESUMO DO VALOR'.center(30))
     linha()
-    print(f'{desc_lista("Preço analizado:")}', end='')
+    print(f'{desc_lista("Preço analizado:")}', end='')  # \t
     print(printvalor(moeda(n1)))
     print(f'{desc_lista("Metade do preço:")}', end='')
     print(printvalor(metade(n1, f=True)))

@@ -1,7 +1,7 @@
 def metade(n, f=False):
     n /= 2
     if f:
-        return f'R${n:.2f}'
+        return moeda(n)
     else:
         return n
 
@@ -9,7 +9,7 @@ def metade(n, f=False):
 def dobro(n, f=False):
     n *= 2
     if f:
-        return f'R${n:.2f}'
+        return moeda(n)
     else:
         return n
 
@@ -20,7 +20,7 @@ def aumentar(n, porcentagem, f=False):
     aumento *= porcentagem
     n += aumento
     if f:
-        return f'R${n:.2f}'
+        return moeda(n)
     else:
         return n
 
@@ -31,10 +31,10 @@ def diminuir(n, porcentagem, f=False):
     aumento *= porcentagem
     n -= aumento
     if f:
-        return f'R${n:.2f}'
+        return moeda(n)
     else:
         return n
 
 
 def moeda(n):
-    return f'R${n:.2f}'
+    return f'R${n:.2f}'.replace('.', ',')
