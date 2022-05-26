@@ -1,16 +1,21 @@
-def leiaint():
-    while True:
-        try:
-            input_ = str(input('Digite um número inteiro: '))
-            while True:
-                if input_.isnumeric():
-                    print(f'Você digitou o número {input_}.')
-                    break
-                else:
-                    print('\033[31mERROR. \033[mDigite um número inteiro válido.')
-                    input_ = str(input('Digite um número: '))
-        except Exception as erro:
-            print(f'\033[31mErro {erro.__class__}. Valor digitado não é uma número inteiro. ')
+def read_int():
+    try:
+        input_ = int(input('Digite um número inteiro: '))
+    except Exception as erro:
+        print(f'\033[31mErro {erro.__class__}. O valor digitado não é um número inteiro.\033[m')
+        read_int()
+    else:
+        return input_
+
+def read_float():
+    try:
+        input_ = str(input('Digite um número decimal: ')).replace(',', '.')
+        float(input_)
+    except Exception as erro:
+        print(f'\033[31mErro {erro.__class__}. O valor digitado não é um número inteiro.\033[m')
+        read_float()
+    else:
+        return input_
 
 
-leiaint()
+print(f'O valor inteiro digitado foi {read_int()} e o real foi {read_float()}')
