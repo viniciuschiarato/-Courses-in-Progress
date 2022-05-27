@@ -3,15 +3,6 @@ def lc(color=0):
         return f'\033[3{color}m'
     else:
         return f'\033[m'
-    # branco = 0
-    # red = 1
-    # green = 2
-    # yellow = 3
-    # blue = 4
-    # magenta = 5
-    # cian = 6
-    # gray = 7
-
 
 def menu(lista):
     while True:
