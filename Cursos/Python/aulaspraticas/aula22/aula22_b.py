@@ -1,4 +1,4 @@
-from aula22 import aula22_a
+import aula22_a
 
 
 num1 = int(input('Digite um número: '))

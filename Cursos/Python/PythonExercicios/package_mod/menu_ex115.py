@@ -23,7 +23,7 @@ def menu(lista):
         print('-'*30)
         for v in lista:
             cont += 1
-            print(f'{lc(3)}{cont} {lc(4)}{v}')
+            print(f'{lc(3)}{cont} - {lc(4)}{v}')
         print(f'{lc(0)}-' * 30)
         while True:
             try:
@@ -55,5 +55,5 @@ def menu(lista):
             break
 
 
-lista_menu_ex115 = ['opc1', 'opc2', 'opc3']
+lista_menu_ex115 = ['Ver pessoas cadastradas', 'Cadastrar pessoas', 'Sair do programa']
 menu(lista_menu_ex115)
