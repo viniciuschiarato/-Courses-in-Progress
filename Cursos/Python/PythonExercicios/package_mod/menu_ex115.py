@@ -1,10 +1,29 @@
-import dados
+def file_search(name):
+    if file_exist(name):
+        print(f'File found.')
+    else:
+        print(f'File not found.')
+        new_file(name)
 
 
-if library_ex115.file_exist('databese'):
-    print(f'File found.')
-else:
-    print(f'File not found.')
+def file_exist(name):
+    try:
+        a = open(name, "rt")
+        a.close()
+    except FileNotFoundError:
+        return False
+    else:
+        return True
+
+
+def new_file(name):
+    try:
+        a = open(name, 'wt+')
+        a.close()
+    except:
+        print('There was an error creating the file.')
+    else:
+        print(f"Created {name} file.")
 
 
 def lc(color=0):
@@ -64,5 +83,5 @@ def menu(lista):
 
 
 lista_menu_ex115 = ['Ver pessoas cadastradas', 'Cadastrar pessoas', 'Sair do programa']
-
+file_search('test_search.txt')
 menu(lista_menu_ex115)

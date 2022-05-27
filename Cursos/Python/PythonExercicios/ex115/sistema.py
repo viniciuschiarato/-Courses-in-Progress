@@ -1,4 +1,14 @@
 from lib.interface import *
+from lib.arquivo import *
+from time import sleep
+
+arq = 'cursoemvideo.txt'
+if arquivoexiste(arq):
+    print(f'Arquivo encontrado.')
+else:
+    print(f'Arquivo não encontrado.')
+    criararquivo(arq)
+
 while True:
     resposta = menu(['Ver pessoas cadastradas', 'Cadastrar pessoas', 'Sair do programa'])
     print(resposta)
@@ -17,3 +27,4 @@ while True:
         break
     else:
         print(f'{lc(1)}Erro! A opção informada é invalida.{lc()}')
+    sleep(2)
