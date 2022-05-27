@@ -15,14 +15,14 @@ def lc(color=0):
 
 def menu(lista):
     while True:
+        cont = 0
         option = ''
         print('-'*30)
         print('MAIN MENU'.center(30))
         print('-'*30)
-        for c in lista:
-        print(f'{lc(3)}1 - {lc(4)}Ver pessoas cadastradas')
-        print(f'{lc(3)}2 - {lc(4)}Cadastrar novas pessoas')
-        print(f'{lc(3)}3 - {lc(4)}Sair do sistema        ')
+        for v in lista:
+            cont += 1
+            print(f'{lc(3)}{cont} {lc(4)}{v}')
         print(f'{lc(0)}-' * 30)
         while True:
             try:
@@ -54,4 +54,5 @@ def menu(lista):
             break
 
 
-menu()
+lista_menu_ex115 = ['opc1', 'opc2', 'opc3']
+menu(lista_menu_ex115)
