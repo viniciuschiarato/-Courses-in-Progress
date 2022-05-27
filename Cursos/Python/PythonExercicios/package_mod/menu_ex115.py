@@ -1,3 +1,11 @@
+import dados
+
+
+if library_ex115.file_exist('databese'):
+    print(f'File found.')
+else:
+    print(f'File not found.')
+
 
 def lc(color=0):
     if color != 0:
@@ -56,4 +64,5 @@ def menu(lista):
 
 
 lista_menu_ex115 = ['Ver pessoas cadastradas', 'Cadastrar pessoas', 'Sair do programa']
+
 menu(lista_menu_ex115)

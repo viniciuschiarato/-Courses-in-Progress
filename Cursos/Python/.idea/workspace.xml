@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59e1ca51-0885-4378-b749-203383c2330c" name="Changes" comment="menu_ex115 test">
+    <list default="true" id="59e1ca51-0885-4378-b749-203383c2330c" name="Changes" comment="test">
+      <change afterPath="$PROJECT_DIR$/PythonExercicios/package_mod/dados/databese.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PythonExercicios/package_mod/dados/library_ex115.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonExercicios/package_mod/library_ex115.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonExercicios/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PythonExercicios/package_mod/menu_ex115.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonExercicios/package_mod/menu_ex115.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/tester01.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonExercicios/tester01.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +43,12 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\vinic\Documents\Meus Projetos\-Courses-in-Progress\Cursos\Python\PythonExercicios" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vinic\Documents\Meus Projetos\-Courses-in-Progress\Cursos\Python\PythonExercicios\package_mod\dados" />
+      <recent name="C:\Users\vinic\Documents\Meus Projetos\-Courses-in-Progress\Cursos\Python\aulaspraticas" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.tester01">
+  <component name="RunManager" selected="Python.menu_ex115">
     <configuration name="ex113" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -85,7 +91,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ex115a" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ex115" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -97,7 +103,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonExercicios/ex115a.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\vinic\Documents\Meus Projetos\-Courses-in-Progress\Cursos\Python\PythonExercicios\ex115.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -150,9 +156,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.menu_ex115" />
         <item itemvalue="Python.tester01" />
         <item itemvalue="Python.ex115a" />
-        <item itemvalue="Python.menu_ex115" />
         <item itemvalue="Python.ex114" />
         <item itemvalue="Python.ex113" />
       </list>
@@ -237,15 +243,60 @@
       <option name="project" value="LOCAL" />
       <updated>1653667254499</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="menu_ex115 v3">
+      <created>1653668271136</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1653668271136</updated>
+    </task>
+    <task id="LOCAL-00012" summary="test">
+      <created>1653668458901</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1653668458901</updated>
+    </task>
+    <task id="LOCAL-00013" summary="test">
+      <created>1653668638763</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1653668638763</updated>
+    </task>
+    <task id="LOCAL-00014" summary="test">
+      <created>1653672162143</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1653672162143</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -261,6 +312,8 @@
     <MESSAGE value="menu_ex115 v2" />
     <MESSAGE value="ex115 run and library_ex115 created" />
     <MESSAGE value="menu_ex115 test" />
-    <option name="LAST_COMMIT_MESSAGE" value="menu_ex115 test" />
+    <MESSAGE value="menu_ex115 v3" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
 </project>
