@@ -1,4 +1,3 @@
-
 from lib.arquivo import *
 from time import sleep
 
