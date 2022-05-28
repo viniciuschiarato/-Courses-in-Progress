@@ -1,3 +1,4 @@
+from ex115.lib.interface import *
 def arquivoexiste(nome):
     try:
         a = open(nome, 'rt')
@@ -18,3 +19,11 @@ def criararquivo(nome):
         print(f"arquivo {nome} criado")
 
 
+def leiaarquivo(nome):
+    try:
+        a = open(nome, 'rt')
+    except:
+        print('Error ao ler arquivo!')
+    else:
+        cabecalho('Pessoas Cadastradas')
+        print(a.read())  # .readlines (le e coloca toda a informação em uma linha)

@@ -13,9 +13,7 @@ while True:
     resposta = menu(['Ver pessoas cadastradas', 'Cadastrar pessoas', 'Sair do programa'])
     print(resposta)
     if resposta == 1:
-        print(linha())
-        print('OPÇÃO 1'.center(30))
-        print(linha())
+        leiaarquivo(arq)
     elif resposta == 2:
         print(linha())
         print('OPÇÃO 2'.center(30))
