@@ -1,4 +1,4 @@
-from lib.interface import *
+
 from lib.arquivo import *
 from time import sleep
 
@@ -11,13 +11,12 @@ else:
 
 while True:
     resposta = menu(['Ver pessoas cadastradas', 'Cadastrar pessoas', 'Sair do programa'])
-    print(resposta)
     if resposta == 1:
         leiaarquivo(arq)
     elif resposta == 2:
-        print(linha())
-        print('OPÇÃO 2'.center(30))
-        print(linha())
+        nome = str(input('Nome: ')).title().strip()
+        idade = read_int('Idade: ')
+        cadastrar(arq, nome, idade)
     elif resposta == 3:
         print(linha())
         print('Saindo do sistema... Até logo!'.center(30))
@@ -26,3 +25,7 @@ while True:
     else:
         print(f'{lc(1)}Erro! A opção informada é invalida.{lc()}')
     sleep(2)
+
+
+
+# banco de dados em python
