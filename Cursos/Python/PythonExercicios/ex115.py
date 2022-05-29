@@ -1,4 +1,18 @@
-from time import sleep:
+from time import sleep
+
+
+def read_int(txt):
+    while True:
+        try:
+            input_ = int(input(txt))
+        except (ValueError, TypeError):
+            print(f'\033[31mErro. O valor digitado não é um número inteiro.\033[m')
+            continue
+        except KeyboardInterrupt:
+            print(f'\033[31mErro. Entrada de dados interrompida pelo usuário.\033[m')
+            return 0
+        else:
+            return input_
 
 
 def file_search(name):
@@ -28,14 +42,32 @@ def new_file(name):
 
 def print_file_content(name):
     try:
-        file = open(name, 'rt')
+        file_open = open(name, 'rt')
     except:
         print('There was an error reading the file.')
     else:
-        for linha in file:
-            dados = linha.split(';')
-            print(f'{dados[0]:<22}{dados[1]:>3} anos')
+        for line in file_open:
+            data = line.split(';')
+            data[1] = data[1].replace('\n', '')
+            print(f'{data[0]:<23}{data[1]:>3} anos')
             sleep(1)
+
+
+def include_text(file_id, name='Unknown', age=0):
+    try:
+        file = open(file_id, 'at+')
+        name = str(input('Name: ')).title()
+        age = read_int('Age: ')
+    except:
+        print('There error in opening file.')
+    else:
+        try:
+            file.write(f'{name};{age}\n')
+        except:
+            print('TThere error in process of write files.')
+        else:
+            print(f'New register "{name}" added.')
+            file.close()
 
 
 def lc(color=0):
@@ -80,13 +112,14 @@ def menu(lista):
                 break
         if option == 1:
             print('-' * 30)
-            print(f'{lista[0]}'.center(30))
+            print(f'{content[0]}'.center(30))
             print('-' * 30)
             print_file_content('test_search.txt')
         if option == 2:
             print('-' * 30)
-            print(f'{lista[0]}'.center(30))
+            print(f'{content[1]}'.center(30))
             print('-' * 30)
+            include_text('test_search.txt')
         if option == 3:
             print('-' * 30)
             print('PROGRAM FINISH...'.center(30))
@@ -96,7 +129,7 @@ def menu(lista):
             break
 
 
-content = ['check registered', 'New register', 'exit program']
-menu(content)
 file_name = 'test_search.txt'
 file_search(file_name)
+content = ['Check registered', 'New register', 'Exit program']
+menu(content)

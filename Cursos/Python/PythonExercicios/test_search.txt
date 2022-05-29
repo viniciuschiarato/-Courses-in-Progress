@@ -3,3 +3,6 @@ Vinicius;22
 Wagner;33
 Jose;72
 Alex;20
+palito;32
+Carlito;12
+Jorge;55
