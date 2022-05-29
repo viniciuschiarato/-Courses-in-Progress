@@ -1,15 +1,15 @@
-def file_exist(name):
-    try:
-        file_ = open(name, "rt")
-        file_.close()
-    except FileNotFoundError:
-        return False
-    else:
-        return True
+from time import sleep:
 
 
 def file_search(name):
-    if file_exist(name):
+    try:
+        file = open(name, "rt")
+        file.close()
+    except FileNotFoundError:
+        file = False
+    else:
+        file = True
+    if file:
         print(f'File found.')
     else:
         print(f'File not found.')
@@ -18,12 +18,24 @@ def file_search(name):
 
 def new_file(name):
     try:
-        file_ = open(name, 'wt+')
-        file_.close()
+        file = open(name, 'wt+')
+        file.close()
     except:
         print('There was an error creating the file.')
     else:
         print(f"Created {name} file.")
+
+
+def print_file_content(name):
+    try:
+        file = open(name, 'rt')
+    except:
+        print('There was an error reading the file.')
+    else:
+        for linha in file:
+            dados = linha.split(';')
+            print(f'{dados[0]:<22}{dados[1]:>3} anos')
+            sleep(1)
 
 
 def lc(color=0):
@@ -70,6 +82,7 @@ def menu(lista):
             print('-' * 30)
             print(f'{lista[0]}'.center(30))
             print('-' * 30)
+            print_file_content('test_search.txt')
         if option == 2:
             print('-' * 30)
             print(f'{lista[0]}'.center(30))
@@ -83,6 +96,7 @@ def menu(lista):
             break
 
 
-lista_menu_ex115 = ['check registered', 'New register', 'exit program']
-file_exist('test_search.txt')
-menu(lista_menu_ex115)
+content = ['check registered', 'New register', 'exit program']
+menu(content)
+file_name = 'test_search.txt'
+file_search(file_name)
