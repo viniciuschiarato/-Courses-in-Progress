@@ -1,23 +1,44 @@
 @charset "UTF-8";
 
-/*Em HTML é "id" = em CSS é "#" */
-/*em HTML é "class" = em CSS é "." */
+/*Em HTML é "id" = em CSS é "#" (dentro de um mesmo documento só pode haver 1 "id")*/
 
-body {
-    background-color: aquamarine;
-    font-family: Arial, Helvetica, sans-serif;
-}
+/*em HTML é "class" = em CSS é "."  (Multiplas classe podem ser criadas dentro de um mesmo documento)(nomear as classe sempre pela função e não pela forma) */
 
-h1{
-    color: rgb(15, 99, 4);
-}
+body 
+    {background-color: #90B9FA;
+    font-family: Arial, Helvetica, sans-serif;}
 
-h1#principal {
-    text-align: center;
-    background-color: green;
-    color: white;
-}
 
-h2{
-    color: rgb(12, 78, 40)
-}
+h1
+    {color: #222B3B;}
+
+
+h1#principal 
+    {text-align: center;
+    color: white;}
+
+
+h2
+
+    {color: #222B3B;}
+
+
+.basico
+    {color: #1D7874;
+    font-weight: bold;}
+
+
+.intermediario
+    {color: #80793c;}
+
+
+.avancado
+    {color: #803c3c;}
+
+
+p
+    {text-align: justify;}
+
+
+.destaque
+        {background-color: #c5c56070;}
