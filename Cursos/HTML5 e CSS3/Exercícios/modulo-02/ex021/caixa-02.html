@@ -4,8 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ex021 - Modelo de caixas</title>
+    <title>ex021 - Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header{
+            width: 600px;
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: dimgray;
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article{
+            background-color: lightgray;
+        }
+
+        article > aside{
+            background-color: dimgray;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Lorem ipsum</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, ipsam incidunt adipisci quisquam soluta accusantium, fugit, quam doloribus deleniti accusamus maiores inventore odio laudantium ab explicabo dolores modi nam pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio fugit ab labore aspernatur voluptas, quisquam ipsum, eius unde quasi quas perferendis neque illum voluptate nesciunt? Doloribus consequatur harum repellendus laborum.</p>
+
+        </section>
+        <section id="noticias" >
+            <article>
+                <h2>Lorem ipsum</h2>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam cum, incidunt facilis doloremque reiciendis ipsum est dignissimos. Quos, tenetur dignissimos? Temporibus corporis fugit neque et quasi illum, sed expedita harum!</P>
+                <aside>
+                    <P>Artigo escrito por José da Silva</P>
+                </aside>
+            </article>
+            <article>
+                
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Vinícius</p>
+    </footer>
 </body>
 </html>
