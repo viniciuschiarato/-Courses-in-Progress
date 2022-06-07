@@ -23,6 +23,7 @@ main > section > article > h1{
         font-weight: 900;
         font-style: normal;
         color: #164e2f;
+        margin: 10px;
 }
 
 main > section > article > h2{
