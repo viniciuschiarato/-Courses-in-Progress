@@ -51,3 +51,11 @@ main > section > article > p > a {
 a.simb::after {
     content: ' 🔗 ';
 }
+
+section.dark {
+    background-color: #164e2f;
+}
+
+article.video {
+    text-align: center;
+}
