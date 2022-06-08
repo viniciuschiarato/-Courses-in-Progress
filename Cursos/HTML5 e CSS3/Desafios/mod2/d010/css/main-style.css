@@ -6,17 +6,17 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
-main{
+main {
     margin: 0px;
 }
-main > section{
+main > section {
     padding: 20px;
     width: 850px;
     background-color: white;
     margin: 0px auto;
 }
 
-main > section > article > h1{
+main > section > article > h1 {
         height: 40px;
         font-size: xx-large;
         font-family: Idroid;
@@ -26,7 +26,7 @@ main > section > article > h1{
         margin: 10px;
 }
 
-main > section > article > h2{
+main > section > article > h2 {
     background-image: linear-gradient(to right, #1378404d, white);
     font-family: Idroid;
     font-weight: normal;
@@ -34,10 +34,20 @@ main > section > article > h2{
     color: #164e2f;
 }
 
-main > section > article > p{
+main > section > article > p {
     text-align: justify;
 }
 
-main > section > article > div{
+main > section > article > div {
     text-align: center;
+}
+
+main > section > article > p > a {
+    text-decoration: none;
+    color: #1b6b3f;
+    font-weight: bold;
+}
+
+a.simb::after {
+    content: ' 🔗 ';
 }
