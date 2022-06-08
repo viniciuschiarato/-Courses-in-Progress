@@ -59,3 +59,37 @@ section.dark {
 article.video {
     text-align: center;
 }
+
+main > section > aside{
+    border-radius: 10px;
+    background-color: #C5EBD6;
+}
+
+main > section > aside > h1{
+    color: white;
+    background-color: #2FA865;
+    margin: 0px;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 0px 5px 10px;
+}
+
+main > section > aside > p {
+    padding: 0px 10px;
+}
+
+section.aside{
+    border-radius: 0px 0px 10px 10px;
+}
+
+footer{
+    background-color: #164e2f;
+    text-align: center;
+    color: white;
+    margin: 10px 0px 0px 0px;
+    padding: 10px;
+}
+
+footer > p {
+    margin: 0px ;
+    padding: 30;
+}
