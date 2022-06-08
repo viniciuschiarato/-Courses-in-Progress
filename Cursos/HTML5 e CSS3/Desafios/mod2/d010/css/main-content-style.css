@@ -42,7 +42,7 @@ main > section > article > div {
     text-align: center;
 }
 
-main > section > article > p > a {
+a { /*main > section > article > p > */
     text-decoration: none;
     color: #1b6b3f;
     font-weight: bold;
@@ -60,12 +60,13 @@ article.video {
     text-align: center;
 }
 
-main > section > aside{
+main > section > aside {
     border-radius: 10px;
     background-color: #C5EBD6;
+    padding: 0px 0px 15px 0px;
 }
 
-main > section > aside > h1{
+main > section > aside > h1 {
     color: white;
     background-color: #2FA865;
     margin: 0px;
@@ -77,11 +78,17 @@ main > section > aside > p {
     padding: 0px 10px;
 }
 
-section.aside{
+section.aside {
     border-radius: 0px 0px 10px 10px;
 }
 
-footer{
+main > section > aside > ul {
+    display: inline-block;
+    width: 350px;
+    margin: 0px;
+}
+
+footer {
     background-color: #164e2f;
     text-align: center;
     color: white;
@@ -92,4 +99,9 @@ footer{
 footer > p {
     margin: 0px ;
     padding: 30;
+}
+
+footer > p > a {
+    color: white;
+    font-weight: bold;
 }
