@@ -1,0 +1,46 @@
+MODELO DE CAIXA
+
+Anatomia das caixas/elemento:
+
+content = conteúdo
+height = altura
+width = largura
+border = borda/fronteira
+padding = acolchoamento/preenchimento(da borda para dentro)
+margin = margem (da borda para fora)
+outline = contorno/traçado (fora do elemento)
+
+Tipos de caixa:
+
+box-level:
+
+div
+h1-h6
+p
+main
+header
+nav
+article
+aside
+footer
+form
+video
+
+inline-level:
+
+span
+a
+code
+small
+strong
+em
+sup
+sub
+label
+button
+input
+select
+
+user agent = navegador
+
+
