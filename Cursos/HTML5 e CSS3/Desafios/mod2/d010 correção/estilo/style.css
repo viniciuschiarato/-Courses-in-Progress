@@ -95,23 +95,58 @@ main{
     box-shadow: 0px 0px 10px black;
 }
 
-main img{
-    width: 100%;
-}
-
-main img.pq{
-    width: 50%;
-    display: block;
-    margin: auto;
-}
-
 main h1 {
+    font-size: 2em;
+    padding: 0px 0px 0px 10px;
     color: var(--cor5);
     font-family: var(--fonte-android);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
 }
 
 main h2 {
+    color: var(--cor4);
+    text-indent: 10px;
     font-family: var(--fonte-android);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+}
+
+main p{
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+    margin: 15px 0px;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
+    background-color: var(--cor0);
+    padding: 2px;
+    border-radius: 5px;
+}
+
+main strong{
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main img{
+    display: block;
+    margin: auto;
+    max-width: 700px;
+}
+
+main img.pq{
+    max-width: 350%;
+    display: block;
+    margin: auto;
 }
 
 footer {
