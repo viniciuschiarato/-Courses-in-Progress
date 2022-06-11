@@ -5,13 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ex005 - Operadores</title>
-    <h1>Assunto:</h1>
+    <h1>part 1 Assunto:</h1>
     <ul></ul>
     <li>aritméticos</li>
     <li>atribuição</li>
     <li>precedência de operadores</li>
     <li>simplificando</li>
     <li>pré e pós-incremento</li>
+    <h1>PartE 2 Assunto:</h1>
+    <ul>
+    <li>relacionais</li>
+    <li>lógico</li>
+    <li>ternário</li>
+    </ul>
 </head>
 <body>
     <script>
@@ -41,6 +47,24 @@
         n = Number(10)
         document.write(--n)  //pré-incremento (-1)
         document.write(n--)  //pós-incremento (-1)
+
+        // relacionais:
+        // >
+        // <
+        // >
+        // <
+        // ==
+        // !=
+        // 5 > 2 true
+        // 7 < 4 false
+        // 8 > 8 true
+        // 9 < 7 false
+        // 5 == 5 true
+        // 4 != 4 false
+        // 8 <= 15 - 10 false // os operadores aritimético serão executados antes
+        // 5 == '5' true js não verifica o tipo apenas a grandeza
+        // 5 === '5' false js vai verificar tudo (idêntico)
+
 
     </script>
 </body>
