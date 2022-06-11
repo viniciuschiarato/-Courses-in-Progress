@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex003 - Fundamentos</title>
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.700);
+            color: rgb(255, 255, 255);
+            font: normal 1em Arial;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h2>Assunto:</h2>
+<ul>
+    <li>Tratamento de dados: Conversões</li>
+    <li>Formatando strings</li>
+</ul>
+    <script>
+       //var n1 = Number.parseInt(prompt('Digite um número: ' )) // código completo da tranformação para inteiro
+       //var n2 = parseInt(prompt('Digite outro número: ' ))  // funciona com o u sem o Number.
+       //var n3 = parseFloat(prompt('Digite mais um número: ' ))  // tranformação para float number
+       //var n4 = Number(prompt('Digite o último número: ' )) // só o Number o pregrama identifica e classifica o input e joga dentro de uma das classes automaticamente. 
+       //var s = n1 + n2 + n3 + n4
+       
+       // alert('A soma dos valores é s') // interpolação
+       // alert('A soma dos valores é ' + s) // concatenação
+       // alert(typeof String(n1)) // transformar em string
+       // alert(typeof n2.toString()) // transformar em string
+       //alert(`A soma de ${n1} + ${n2} + ${n3} + ${n4} é igual a ${s}`)  // template string 
+
+       /* OBS:
+        regras do sinal de adição:
+        (number + number) para adição
+        (string + string) para concatenação
+       */
+
+        /* OBS:
+        identificando elemento no template string:
+        " ` " delimitador
+        "${}" placeholder
+        */
+
+        var js = 'javaScript'
+        alert(js.length)
+        alert(js.toUpperCase())
+        alert(js.toLowerCase())
+    </script>
+</body>
+</html>
