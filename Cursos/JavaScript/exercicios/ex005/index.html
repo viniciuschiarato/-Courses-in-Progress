@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ex005 - </title>
+    <title>ex005 - Operadores</title>
+    <h1>Assunto:</h1>
+    <ul></ul>
+    <li>aritméticos</li>
+    <li>atribuição</li>
+    <li>precedência de operadores</li>
+    <li>simplificando</li>
+    <li>pré e pós-incremento</li>
 </head>
 <body>
+    <script>
+        //n1 = Number(5)
+        //n2 = Number(2)
+        //n3 = Number(3)
+        //document.write(n1+n2)  // soma
+        //document.write(n1-n2)  // subtração
+        //document.write(n1*n2)  // multiplicação
+        //document.write(n1/n2)  // divisão real
+        //document.write(n1%n2)  // divisão inteira (resultado é o resto da divisão inteira)
+        //document.write(n1**n2)  //potêcia
+
     
+        /*
+        1° parênteses
+        2° potêcia
+        3° multiplicação, divisão real, divisão inteira
+        4° soma, subtração
+        */
+        //document.write(n1+n3/n2)  // 1° a divisão
+        //document.write((n1+n3)/n2)  // 1° muda a ordem de precedência
+        //document.write(n1+n3/n2*n1)  // Quando houver 2 operadores com o mesmo nível de precedência será executado o primeiro mais próximo a esquerda
+
+        //n = n + 4 ou n += 4 vale para qualque operador
+        
+        n = Number(10)
+        document.write(--n)  //pré-incremento (-1)
+        document.write(n--)  //pós-incremento (-1)
+
+    </script>
 </body>
 </html>
