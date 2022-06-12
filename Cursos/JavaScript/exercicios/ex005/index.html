@@ -64,8 +64,41 @@
         // 8 <= 15 - 10 false // os operadores aritimético serão executados antes
         // 5 == '5' true js não verifica o tipo apenas a grandeza
         // 5 === '5' false js vai verificar tudo (idêntico)
+        // x !== y true desigual restritos são diferentes mas o valor interno é o mesmo
 
+        ///operadores logicos:
+        // !    negação trabalha apenas com valores lógicos
+        // &&   conjunção (and)
+        // ||   disjunção (or)
 
+        ! true = false  // não verdadeiro é falso
+        ! false = true  // não falso é verdadeido
+
+        true && true = true     //todos os valores lógicos precisam ser verdadeiros para ter resultado true
+        true && false = false
+        false && true = false
+        false && false = false
+
+        true || true = true //basta haver apenas um valor true para o resultado ser true
+        true || false = true
+        false || true = true
+        false || false = false
+
+        5 > 8 && 8 % 2 == 0 falso // primeiro será executado o operador aritmético, depois os relacionais e por último o lógico
+
+        5 <= 8 || b / 2 == 2 true
+
+        // se os três operadores lógicos estiverem numa mesma expressão primeiro será executado o negativo, em seguida o conjunção e por fim o disjunção.
+        
+        //operador ternario
+        ?
+        :
+
+        teste lógico ? true : false
+
+        5.5 > 7 ? 'Aprovado' : 'Reprovado' return reprovado
+
+        x = 8 % 2 == 0 ? 5 : 9 return x recebe 5
     </script>
 </body>
 </html>
