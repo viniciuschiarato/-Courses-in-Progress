@@ -5,8 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ex005 - Trabalhando com o DOM</title>
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.521);
+            color: white;
+            font: normal 1.1em arial
+
+        }
+    </style>
 </head>
 <body>
-    
+    <h1 name="title">Iniciando estudos com DOM</h1>
+    <p class="paragrafo">Aqui vai o resultado:</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        window.document.write(window.navigator.appName)
+        document.write(window.document.URL )
+
+        p1 = document.getElementsByTagName("p")[1]
+        document.write('<BR>o valor interno de p1 é: ' + `<br>${p1.innerText}<BR>`)
+        window.document.write(p1.innerHTML)
+        p1.style.color = 'blue'
+        var corpo = window.document.body
+        corpo.style.background = 'black'
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerHTML = 'Modificado no DOM'
+        var t = document.getElementsByName('title')[0]
+        d.innerText = 'arvore DOM'
+        pr = document.getElementsByClassName('paragrafo')[0]
+        pr.innerText = 'Modificado com DOM'
+        s = document.querySelector('div#msg')
+        s.style.color = 'yellow'
+    </script>
 </body>
 </html>
