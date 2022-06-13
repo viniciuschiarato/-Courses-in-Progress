@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex010a - Condições </title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    <p>Velocidade de carro: <input type="number" name="txvel" id="txtvel"> km/h</p>
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div class="res" >
+    </div>
+    <script>
+        function calcular() {
+            input_vel = document.querySelector('input#txtvel')
+            resultado = document.querySelector('div.res')
+            velocidade = Number(input_vel.value)
+            resultado.innerHTML = `<p>Sua velocidade é <strong>${velocidade}</strong> Km/h</p>`
+
+            if (velocidade > 60){
+                resultado.innerHTML += `<p>Você foi multado por excesso de velocidade!`
+            }
+
+            resultado.innerHTML += `<p>Dirija sempre com segurança!</p>`
+        }
+    </script>
+</body>
+</html>
