@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex010b - Condições </title>
+</head>
+<body>
+    <h1>Entrada no aeroporto</h1>
+    <p>Informe o país em que o passageiro nasceu: <input type="text" id="txt"> </p>
+    <input type="button" value="Verificar" onclick="verification()">
+    <div class="res" >
+    </div>
+    <script>
+        function verification() {
+            input_text = document.querySelector('input#txt')
+            result = document.querySelector('div.res')
+            text = (input_text.value)
+            if (text == 'Brasil'){
+                result.innerHTML = `<p>O passageiro é brasileiro.</p>`
+            }
+            else{
+                result.innerHTML = `<p>O passageiro é estrangeiro.</p>`
+            }
+        }
+    </script>
+</body>
+</html>
