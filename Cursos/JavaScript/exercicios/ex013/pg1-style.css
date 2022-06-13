@@ -1,16 +1,14 @@
 @charset "UTF-8";
 
 body {
-    background-color: wheat;
-    margin: 0px;
     font: normal 1.5em arial;
     text-align: center;
     color: white;
-
 }
 
 section {
     background-color: white;
+    width: 400px;
     margin: auto;
     border-radius: 15px;
     color: black;
