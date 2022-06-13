@@ -25,16 +25,16 @@
         sec_modif.innerHTML = `<h3>Agora são ${hora} horas</h3>`
 
         if (hora > 0 && hora < 6 || hora > 18){ 
-            sec_modif.innerHTML += `<img src="imagens/modified/noite.png" alt="Noite">` //01021b
+            sec_modif.innerHTML += `<img src="imagens/modified/noite.png" alt="Noite">`
             body_modif.style.background = '#01021b'
             sec_modif.style.background = '#000000b6'
         }
         else if (hora < 12){
-            sec_modif.innerHTML += `<img src="imagens/modified/manha.png" alt="Amanhecer">` //
+            sec_modif.innerHTML += `<img src="imagens/modified/manha.png" alt="Amanhecer">`
             body_modif.style.background = '#5fc5c5c7'
         }
         else{
-            sec_modif.innerHTML += `<img src="imagens/modified/entardecer.png" alt="Entardecer">` //
+            sec_modif.innerHTML += `<img src="imagens/modified/entardecer.png" alt="Entardecer">`
             body_modif.style.background = '#c56c30e0'
         }
     </script>
