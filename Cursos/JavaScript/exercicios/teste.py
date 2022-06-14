@@ -1,3 +1,3 @@
 print('Hello, Word!')
 nome = 'rbghaeb'
-print(idade)def
+print(idade)
