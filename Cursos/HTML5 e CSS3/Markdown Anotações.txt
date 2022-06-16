@@ -1,0 +1,74 @@
+Negrito: **Linguagem** __Markdown__
+
+Itálico: *Linguagem* _Markdown_
+
+Negrito e Itálico: __*Linguagem*__ __*Markdown*__
+
+Rasurado: ~~Linguagem~~ ~~Markdown~~~
+
+Título Nível 1: # Linguagem Markdown
+
+Título Nível 2: ## Linguagem Markdown
+
+Título Nível 3: ### Linguagem Markdown
+
+Linha: --- ou ***
+
+Lista numerada: 
+1. teste1
+2. teste2
+3. teste3
+
+Lista numerada com subitem: 
+1. teste1
+   1. teste (Três espaços antes)
+2. teste2
+
+Lista demarcada
+* teste1
+   * teste (Três espaços antes)
+* teste2
+- teste3 (diferencia da lista com *)
+
+Lista de tarefas:
+- [ ] Upar meus skills constantemente
+- [x] Sempre buscar por melhorias
+- [ ] Trabalhar em equipe
+
+Links:
+[Acesse meu GitHub](https://github.com/viniciuschiarato)
+
+Tabelas:
+Num | Nome | Nota
+---|---|---
+1 | Vinícius | 9,5
+2 | Gustavo | 8,5
+3 | Maria | 10,0
+
+Fim da tabela
+
+Referências a comandos:
+Um comando muito usado em JS é `document.getElementById()`.
+
+Referências a trechos de um programa:
+Esse é um trecho de um dos meus primeiros programas em Python:
+```
+num = int(input('Digite um número: '))
+if num % 2 == 0:
+    print(f'O valor {num} é PAR')
+else:
+    print(f'O valor {num} é ÍMPAR')
+```
+
+Emojis: 
+:+1
+:hand
+Códigos para emojis em: https://github.com/ikatyang/emoji-cheat-sheet
+
+Citações e marcar pessoas: 
+@ fulano
+
+Respoder a um resposta (quote replay):
+Cliacar no menu da issues "..." e usar o quote replay
+
+
