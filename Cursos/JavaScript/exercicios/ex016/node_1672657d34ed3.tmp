@@ -19,22 +19,10 @@ for(var c = 1; c <= 6; c++){
 }
 console.log('Fim!')*/
 
-a = 1
-b = 10
-c2 = 2
+inicio = 1
+fim = 10
+passo = 2
 
-inicio = Number(a)
-fim = Number(b)
-passo = Number(c2)
-c = 0
-for(inicio; inicio <= fim; inicio += passo){
-    c++
-    if (c == 1){
-        console.log (inicio)
-    }
-    else{
-        console.log (` → ${inicio}`)
-    }
-    
+for(inicio; inicio <= fim; inicio + passo){
+    console.log(inicio)
 }
-console.log += '🚩'
