@@ -5,8 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alinhamento vertical</title>
+    <style>
+
+        #container{
+            height: 97vh;
+            padding: 10px;
+            background-color: purple;
+            position: relative; /*primeiro passo (é o padrão das caixas)*/
+            background-image: url("imagens/target001.png");
+            background-size: 100% 100%;
+        }
+
+        #conteudo{
+            position: absolute; /*segundo passo desbloqueia o terceiro e o quarto passo*/
+            left: 50%; /*terceiro passo*/
+            top: 50%; /*quarto passo*/
+            transform: translate(-50%, -50%);/*quinto e ultimo passo*/
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            background-image: url("imagens/target001.png");
+            background-size: 100% 100%;
+            /* /margin: auto; alinhamento horizontal */
+
+        }
+
+    </style>
 </head>
 <body>
-    
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
 </body>
 </html>
