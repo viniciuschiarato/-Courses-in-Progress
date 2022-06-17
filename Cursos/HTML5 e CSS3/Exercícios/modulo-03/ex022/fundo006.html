@@ -6,18 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body{
-            height: 100vh;
+            height: 100vh;/*
             background-color: black;
             background-image: url("imagens/wallpaper002.jpg");
             background-position: center top;
             background-repeat: no-repeat;
             /* background-size: contain; /* imagem 100% exibida */
-            background-size: cover; /* cobertura de 100% da viewport. Picota a imagem mas fica bom.*/
+            /*background-size: cover; /* cobertura de 100% da viewport. Picota a imagem mas fica bom.*/
+            /*background-attachment: fixed;
+            /*
+            Shorthand - background: 
+            colo > image > position > repeat > [size] > attachment
+            */
+            background: fixed black url("imagens/wallpaper002.jpg") center center/cover no-repeat
         }
 
         main{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: xx-large;
             background-color: white;
-            width: 400px;
+            max-width: 600px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -25,11 +33,13 @@
 
         }
     </style>
-    <title>Teste de imagem de fundo</title>
+    <title>Fundo fixo de tela</title>
 </head>
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quasi, necessitatibus eveniet magnam tenetur commodi consectetur sapiente architecto laborum obcaecati soluta deleniti totam quo praesentium molestias, sequi repellat aspernatur optio! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe tempora iste, iure, consequuntur ea, repudiandae tempore aperiam explicabo neque aspernatur voluptatibus! Doloremque quis, magnam quo consequatur minima fuga optio quaerat? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, quaerat rerum deleniti ipsa quis cum illum repellendus reprehenderit facilis, aliquid animi! Excepturi laborum laudantium harum cupiditate voluptatum dolorum deleniti saepe!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quasi, necessitatibus eveniet magnam tenetur commodi consectetur sapiente architecto laborum obcaecati soluta deleniti totam quo praesentium molestias, sequi repellat aspernatur optio! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe tempora iste, iure, consequuntur ea, repudiandae tempore aperiam explicabo neque aspernatur voluptatibus! Doloremque quis, magnam quo consequatur minima fuga optio quaerat? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, quaerat rerum deleniti ipsa quis cum illum repellendus reprehenderit facilis, aliquid animi! Excepturi laborum laudantium harum cupiditate voluptatum dolorum deleniti saepe!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quasi, necessitatibus eveniet magnam tenetur commodi consectetur sapiente architecto laborum obcaecati soluta deleniti totam quo praesentium molestias, sequi repellat aspernatur optio! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe tempora iste, iure, consequuntur ea, repudiandae tempore aperiam explicabo neque aspernatur voluptatibus! Doloremque quis, magnam quo consequatur minima fuga optio quaerat? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, quaerat rerum deleniti ipsa quis cum illum repellendus reprehenderit facilis, aliquid animi! Excepturi laborum laudantium harum cupiditate voluptatum dolorum deleniti saepe!</p>
     </main>
 </body>
