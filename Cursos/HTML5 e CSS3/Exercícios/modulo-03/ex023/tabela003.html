@@ -21,6 +21,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -32,6 +33,14 @@
             color: white;
             background-color: gray;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+
+        }
+
         .numero{
             text-align: right;
         }
