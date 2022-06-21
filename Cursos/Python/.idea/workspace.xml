@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59e1ca51-0885-4378-b749-203383c2330c" name="Changes" comment="test">
-      <change afterPath="$PROJECT_DIR$/PythonExercicios/package_mod/dados/databese.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PythonExercicios/package_mod/dados/library_ex115.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/package_mod/library_ex115.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonExercicios/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonExercicios/package_mod/menu_ex115.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonExercicios/package_mod/menu_ex115.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +32,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/vinic/Documents/Meus Projetos/-Courses-in-Progress/Cursos/Python/PythonExercicios&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/vinic/OneDrive/Documentos/Meus Projetos/-Courses-in-Progress/Cursos/Python&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -158,7 +154,6 @@
       <list>
         <item itemvalue="Python.menu_ex115" />
         <item itemvalue="Python.tester01" />
-        <item itemvalue="Python.ex115a" />
         <item itemvalue="Python.ex114" />
         <item itemvalue="Python.ex113" />
       </list>
