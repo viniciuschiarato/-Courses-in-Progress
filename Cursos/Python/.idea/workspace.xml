@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59e1ca51-0885-4378-b749-203383c2330c" name="Changes" comment="test">
+      <change afterPath="$PROJECT_DIR$/webscraping/Buscas na Web/Buscando Notícias na Web.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webscraping/Requisições/teste01.py" beforeDir="false" afterPath="$PROJECT_DIR$/webscraping/Requisições/teste01.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -36,7 +36,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "C:/Users/vinic/OneDrive/Documentos/Meus Projetos/-Courses-in-Progress/Cursos/Python",
-    "settings.editor.selected.configurable": "Console"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -48,8 +48,8 @@
       <recent name="C:\Users\vinic\Documents\Meus Projetos\-Courses-in-Progress\Cursos\Python\aulaspraticas" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.teste01">
-    <configuration name="ex114" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.Buscando Notícias na Web">
+    <configuration name="Buscando Notícias na Web" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -57,11 +57,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PythonExercicios" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/webscraping/Buscas na Web" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonExercicios/ex114.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/webscraping/Buscas na Web/Buscando Notícias na Web.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -156,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Buscando Notícias na Web" />
         <item itemvalue="Python.teste01" />
         <item itemvalue="Python.tester02" />
         <item itemvalue="Python.menu_ex115" />
         <item itemvalue="Python.tester01" />
-        <item itemvalue="Python.ex114" />
       </list>
     </recent_temporary>
   </component>
