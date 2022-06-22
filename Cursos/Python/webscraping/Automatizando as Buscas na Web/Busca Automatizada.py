@@ -1,7 +1,7 @@
+import openpyxl
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
-
 lista_noticias = list()
 
 response = requests.get('https://g1.globo.com/')
@@ -33,6 +33,6 @@ for noticia in noticias:
 
 news = pd.DataFrame(lista_noticias, columns=['Título', 'Link', 'Subtítulo'])
 
-news.to_excel('noticias.xlsx', index=False)
+news.to_excel('noticia.xlsx', index=False)
 
 print(news)
