@@ -15,10 +15,10 @@ site = BeautifulSoup(response.text, 'html.parser')
 
 product = site.find('div', attrs={"class": "andes-card andes-card--flat andes-card--default ui-search-result ui-search-result--core andes-card--padding-default andes-card--animated"})
 
-#print(product.prettify())
-
 title = product.find('h2', attrs={"class": "ui-search-item__title ui-search-item__group__element"})
+
 link = product.find('a', attrs={"class": "ui-search-link"})
 
+#print(product.prettify())
 #print('Título do produto:', title.text)
-print(link.text)
+print('link do produto: ', link['href'])
