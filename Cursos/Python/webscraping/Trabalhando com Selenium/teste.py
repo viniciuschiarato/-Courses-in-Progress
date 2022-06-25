@@ -12,13 +12,20 @@ options.add_argument('window-size=400,800')
 
 browser = webdriver.Chrome(options=options)
 
-browser.get('https://www.google.com.br/')
+browser.get('https://www.airbnb.com.br')
 
-input_place = browser.find_element(By.XPATH, '/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input')
-input_place.clear()
-input_place.send_keys('feel good')
+sleep(3)
+
+button = browser.find_element(By.XPATH, '//*[@id="site-content"]/div[1]/div/div/div/div/div/div/div[2]/div[1]/div/div[1]/div/div/div/div/div/div[1]/button')
+
+sleep(3)
+
+button.click()
+
+sleep(3)
+
+input_place = browser.find_element(By.XPATH, '//*[@id="/homes-1-input"]')
+input_place.send_keys('São Paulo')
 input_place.submit()
 
-sleep(30)
-
-
+sleep(60)
