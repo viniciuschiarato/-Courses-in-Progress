@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59e1ca51-0885-4378-b749-203383c2330c" name="Changes" comment="add">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webscraping/Trabalhando com Selenium/Primeiros Passos com SELENIUM.py" beforeDir="false" afterPath="$PROJECT_DIR$/webscraping/Trabalhando com Selenium/Primeiros Passos com SELENIUM.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webscraping/Trabalhando com Selenium/teste.py" beforeDir="false" afterPath="$PROJECT_DIR$/webscraping/Trabalhando com Selenium/teste.py" afterDir="false" />
     </list>

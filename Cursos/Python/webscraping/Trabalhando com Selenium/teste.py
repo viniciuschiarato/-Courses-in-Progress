@@ -12,25 +12,13 @@ options.add_argument('window-size=400,800')
 
 browser = webdriver.Chrome(options=options)
 
-browser.get('https://www.youtube.com/')
+browser.get('https://www.google.com.br/')
 
-sleep(2)
-
-input_place = browser.find_element(By.XPATH,'//*[@id="search"]')
-
+input_place = browser.find_element(By.XPATH, '/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input')
+input_place.clear()
 input_place.send_keys('feel good')
-
 input_place.submit()
 
+sleep(30)
 
 
-
-
-
-
-
-# site = BeautifulSoup(browser.page_source, "html.parser")
-
-# print(site.prettify())
-
-# sleep(30)
