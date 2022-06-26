@@ -7,14 +7,26 @@ function contar() {
     if (inicio == '' || fim == '') {
         resultado.innerHTML = 'Impossível contar.'
     }
-    else if (inicio > fim){
-        alert('[ERRO] Início não pode ser menor que o fim.')
+    else if (inicio > fim) {
+        c = 0
+        for (inicio; inicio >= fim; inicio -= passo) {
+            c++
+            if (c == 1) {
+                resultado.innerHTML += `${inicio}`
+            }
+            else {
+                resultado.innerHTML += ` → ${inicio}`
+            }
+        }
+        resultado.innerHTML += '🚩' // \u{cód.}
+
     }
-    else {
-        if (passo == 0){
+    else {  
+        if (passo == 0 || passo == '') {
             alert('[ERRO] Passo inválido! Considerando passo = 1.')
             passo = 1
         }
+    
         c = 0
         for (inicio; inicio <= fim; inicio += passo) {
             c++
