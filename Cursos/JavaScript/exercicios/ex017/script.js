@@ -1,17 +1,17 @@
 function tabuada(){
     numero = Number(document.getElementById('entrada').value)
-    resultado = document.getElementById('resultado')
+    resultado = document.getElementById('seltab')
     if (numero == ''){
         alert('Por favor, digite um número!')
     }
     else{
+        resultado.innerHTML = "" //CLEAR()
         var c = 1
         while (c <= 10){
-            produto = numero * c
-            if (c == 1){
-                resultado.innerHTML = '</td>' + numero + ' x ' + c + ' = ' + produto + '</td><br>'}
-            else{
-            resultado.innerHTML += '</td>' + numero + ' x ' + c + ' = ' + produto + '<br>'}
+            line = document.createElement('option')
+            line.text = `${numero} x ${c} = ${numero * c}`
+            line.value = `line${c}`
+            resultado.appendChild(line)
             c++
         }
     }
