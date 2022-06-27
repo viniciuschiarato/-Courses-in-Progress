@@ -8,16 +8,30 @@ function adicionar() {
     conferencia.appendChild(info)
 }
 function resposta() {
-    resp = []
-    resp.push(`Ao todo, temos ${lista.length} número cadastrados.`)
-    resp.push(`O maior valor informado foi ${lista.Max}`)
-    resp.push(`O menor valor informado foi ${1}`)
-    resp.push(`Somando todos os valores, temos ${1}`)
-    resp.push(`A média dos valores digitados é ${1}`)
-    for( var frase in resp){
-        var campo_resposta = document.getElementById('campo_resposta')
-        var verify = document.createElement('p')
-        verify.textContent = `conteudo ${frase}`
-        campo_resposta.appendChild(verify)
+
+    function soma_lista(lista_){
+        soma = 0
+        for(var pos in lista_){
+            soma += lista_[pos]
+        }
+        return soma
     }
+
+    function media_lista(lista_){
+
+        soma = 0
+
+        media = lista_.length
+        for(var pos in lista_){
+            soma += lista_[pos]
+        }
+        media = soma / media
+            return  media
+    }
+    var campo_resposta = document.getElementById('campo_resposta')
+    campo_resposta.innerHTML =`<p>Ao todo, temos ${lista.length} número cadastrados.</p>`
+    campo_resposta.innerHTML +=`<p>O maior valor informado foi ${Math.max.apply(null, lista)}</p>`
+    campo_resposta.innerHTML +=`<p>O menor valor informado foi ${Math.min.apply(null, lista)}</p>`
+    campo_resposta.innerHTML +=`<p>Somando todos os valores, temos ${soma_lista(lista)}</p>`
+    campo_resposta.innerHTML +=`<p>A média dos valores digitados é ${media_lista(lista)}</p>`
 }
