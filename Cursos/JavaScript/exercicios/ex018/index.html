@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Números</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+    <section>
+        <div>
+            <span>
+                <p>Número (entre 1 e 100):</p>
+                <input type="number" name="entrada" id="entrada">
+                <input type="button" value="Adicionar" onclick="adicionar()">
+            </span>
+        </div>
+
+        <div>
+            <select name="conferencia" id="conferencia" size="10"></select>
+            <div>
+                <input type="button" value="Finalizar" onclick="resposta()">
+            </div>
+            <div>
+                <div id="campo_resposta"></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
