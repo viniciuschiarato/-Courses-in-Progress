@@ -1,35 +1,36 @@
 var lista = []
 
-function duplicidade(value, arr){
-    if(arr.indexOf(Number(value)) != -1){
-      return true
-    }
-    else{
-      return false
-    }
-}
-
-function numero_natural(value){
-    if(value < 0){
+function duplicidade(value, arr) {
+    if (arr.indexOf(Number(value)) != -1) {
         return true
     }
-    else{
+    else {
         return false
     }
 }
 
-function campo_vazio(value){
-    if(value == ""){
+function numero_natural(value) {
+    if (value < 0) {
         return true
     }
-    else{
+    else {
         return false
     }
 }
+
+function campo_vazio(value) {
+    if (value == "") {
+        return true
+    }
+    else {
+        return false
+    }
+}
+
 function adicionar() {
 
     var numero = Number(document.getElementById('entrada').value)
-    if (duplicidade(numero, lista) ||numero_natural(numero)|| numero > 100 || campo_vazio(numero)) {
+    if (duplicidade(numero, lista) || numero_natural(numero) || numero > 100 || campo_vazio(numero)) {
         alert('Valor é inválido ou já encontrado na lista')
     }
     else {
@@ -40,11 +41,12 @@ function adicionar() {
         conferencia.appendChild(info)
     }
 }
+
 function resposta() {
-    if (lista == ""){
+    if (lista == "") {
         alert("adicione valores antes de finalizar")
     }
-    else{
+    else {
         function soma_lista(lista_) {
             soma = 0
             for (var pos in lista_) {
@@ -52,11 +54,11 @@ function resposta() {
             }
             return soma
         }
-    
+
         function media_lista(lista_) {
-    
+
             soma = 0
-    
+
             media = lista_.length
             for (var pos in lista_) {
                 soma += lista_[pos]
@@ -70,5 +72,19 @@ function resposta() {
         campo_resposta.innerHTML += `<p>O menor valor informado foi ${Math.min.apply(null, lista)}</p>`
         campo_resposta.innerHTML += `<p>Somando todos os valores, temos ${soma_lista(lista)}</p>`
         campo_resposta.innerHTML += `<p>A média dos valores digitados é ${media_lista(lista)}</p>`
+    }
+}
+
+function duplicidade_logica(value, arr) {
+    pos = 0
+    while (pos < arr.length) {
+        valor = arr[pos]
+        if (valor == value) {
+            return true
+        }
+        else {
+            pos++
+        }
+
     }
 }
