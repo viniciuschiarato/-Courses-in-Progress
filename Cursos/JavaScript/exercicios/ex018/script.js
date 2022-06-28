@@ -1,9 +1,35 @@
 var lista = []
 
+function duplicidade(value, arr){
+    if(arr.indexOf(Number(value)) != -1){
+      return true
+    }
+    else{
+      return false
+    }
+}
+
+function numero_natural(value){
+    if(value < 0){
+        return true
+    }
+    else{
+        return false
+    }
+}
+
+function campo_vazio(value){
+    if(value == ""){
+        return true
+    }
+    else{
+        return false
+    }
+}
 function adicionar() {
 
     var numero = Number(document.getElementById('entrada').value)
-    if (numero in lista || 1 > numero || numero > 100 || numero == "") {
+    if (duplicidade(numero, lista) ||numero_natural(numero)|| numero > 100 || campo_vazio(numero)) {
         alert('Valor é inválido ou já encontrado na lista')
     }
     else {
