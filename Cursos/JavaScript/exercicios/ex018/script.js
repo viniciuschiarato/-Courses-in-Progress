@@ -1,4 +1,5 @@
 var lista = []
+var input_numero = document.getElementById('entrada')
 
 function duplicidade(value, arr) {
     if (arr.indexOf(Number(value)) != -1) {
@@ -28,8 +29,7 @@ function campo_vazio(value) {
 }
 
 function adicionar() {
-
-    var numero = Number(document.getElementById('entrada').value)
+    var numero = Number(input_numero.value)
     if (duplicidade(numero, lista) || numero_natural(numero) || numero > 100 || campo_vazio(numero)) {
         alert('Valor é inválido ou já encontrado na lista')
     }
@@ -40,6 +40,8 @@ function adicionar() {
         info.text = `Valor ${numero} adicionado`
         conferencia.appendChild(info)
     }
+    input_numero.value = ''
+    input_numero.focus()
 }
 
 function resposta() {
