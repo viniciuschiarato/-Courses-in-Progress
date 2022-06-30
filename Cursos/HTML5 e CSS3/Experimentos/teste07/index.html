@@ -64,40 +64,77 @@
         <!--4 de 12-->
         <img src="https://picsum.photos/500/250" class="img-fluid" alt="">
       </div>
-      <div class="col-md-12 mt-5 text-center">
-        <img src="https://picsum.photos/250/250" class="img-fluid">
+
+
+
+      <div class="col">
+
+      <div class="row g-3">
+        
+          <div class="col">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">First Name</label>
+              <input type="text" class="form-control-plaintext" id="exampleFormControlInput1" value="Vinícius"  placeholder="Name" disabled>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control form-control-lg border-dark" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Password</label>
+              <input type="password" class="form-control border-dark" id="exampleFormControlInput1" placeholder="8-10 characters">
+            </div>
+          </div>
       </div>
-      <div class="col-md-12 mt-5">
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td class="table-warning">Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <textarea class="form-control border-dark" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
+
+      <div class="mb-3">
+        <label for="formFile" class="form-label">Default file input example</label>
+        <input class="form-control" type="file" id="formFile">
+      </div>
+
+      <label for="exampleDataList" class="form-label">Datalist example</label>
+      <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+      <datalist id="datalistOptions">
+        <option value="San Francisco">
+        <option value="New York">
+        <option value="Seattle">
+        <option value="Los Angeles">
+        <option value="Chicago">
+      </datalist>
+
+      <div class="col-4">
+        <div class="row mt-5">
+          <div class="input-group mb-3">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+            <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+          </div>
+        </div>
+      </div>
+
+      <div  class="col-8 mt-5 mb-5">
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
     </div>
   </div>
 
