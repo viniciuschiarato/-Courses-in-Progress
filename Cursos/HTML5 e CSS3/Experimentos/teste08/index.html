@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMULÁRIOS BOOTSTRAP</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+
+  <nav class="navbar navbar-expand-md navbar-dark mb-5" style="background-color: #a102d1;"
+    aria-label="Fourth navbar example">
+    <div class="container">
+      <a class="navbar-brand" href="#">Expand at md</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+        aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown"
+              aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown04">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form role="search">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mt-5">
+        <!--lg comportamento telas largas(doc/layout/breakpoint)-->
+        <h1 class="mb-3"><strong>Build fast, responsive sites with Bootstrap</strong></h1>
+        <p class="fs-4">Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt
+          grid system and components, and bring projects to life with powerful JavaScript plugins.</p>
+        <a href="#" style="background-color: #a102d1; border: 1px solid #a102d1" class="btn btn-primary btn-lg p-3">Get
+          Started</a>
+        <button type="button" class="btn btn-outline-secondary btn-lg p-3">Download</button>
+      </div>
+      <div class="col-lg-4 mt-5">
+        <!--4 de 12-->
+        <img src="https://picsum.photos/500/250" class="img-fluid" alt="">
+      </div>
+
+
+
+      <div class="col">
+
+      <div class="row g-3">
+        
+          <div class="col">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">First Name</label>
+              <input type="text" class="form-control-plaintext" id="exampleFormControlInput1" value="Vinícius"  placeholder="Name" disabled>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control form-control-lg border-dark" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Password</label>
+              <input type="password" class="form-control border-dark" id="exampleFormControlInput1" placeholder="8-10 characters">
+            </div>
+          </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <textarea class="form-control border-dark" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label for="formFile" class="form-label">Default file input example</label>
+        <input class="form-control" type="file" id="formFile">
+      </div>
+
+      <label for="exampleDataList" class="form-label">Datalist example</label>
+      <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+      <datalist id="datalistOptions">
+        <option value="San Francisco">
+        <option value="New York">
+        <option value="Seattle">
+        <option value="Los Angeles">
+        <option value="Chicago">
+      </datalist>
+
+      <div class="col-4">
+        <div class="row mt-5">
+          <div class="input-group mb-3">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+            <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+          </div>
+        </div>
+      </div>
+
+      <div  class="col-8 mt-5 mb-5">
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
