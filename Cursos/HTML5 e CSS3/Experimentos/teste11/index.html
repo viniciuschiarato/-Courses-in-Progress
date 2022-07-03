@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Badges and breadcrumb</title>
+  <title>Cards</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
@@ -60,13 +60,20 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mt-5">
-        <!--lg comportamento telas largas(doc/layout/breakpoint)-->
-        <h1 class="mb-3"><strong>Build fast, responsive sites with Bootstrap</strong></h1>
+
+        <div class="card">
+          <div class="card-body">
+            <h1 class="mb-3"><strong>Build fast, responsive sites with Bootstrap</strong></h1>
         <p class="fs-4">Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt
           grid system and components, and bring projects to life with powerful JavaScript plugins.</p>
         <a href="#" style="background-color: #a102d1; border: 1px solid #a102d1" class="btn btn-primary btn-lg p-3">Get
           Started</a>
-        <button onclick= mostra_alerta() type="button" class="btn btn-outline-secondary btn-lg p-3">Download</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg p-3">Download</button>
+          </div>
+        </div>
+
+        <!--lg comportamento telas largas(doc/layout/breakpoint)-->
+        
       </div>
       <div class="col-lg-4 mt-5">
         <!--4 de 12-->
@@ -74,14 +81,99 @@
       </div>
 
 
-      <div class="col mt-5">
+      <div class="col md-3 mt-5">
 
+        <div class="card">
+          <img src="https://picsum.photos/500/250" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="col md-3 mt-5">
+
+        <div class="card">
+          <img src="https://picsum.photos/500/250" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="col md-3 mt-5">
+
+        <div class="card">
+          <img src="https://picsum.photos/500/250" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="col md-3 mt-5">
+
+        <div class="card">
+          <img src="https://picsum.photos/500/250" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+      </div>
 
 
     </div>
+    
+  <div class="row mt-5">
 
-
+    
+    <div class="col md-6">
+      <div class="card" style="height: 210px;">
+        <div class="card-header">
+          Featured
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
     </div>
+
+    <div class="col md-6">
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://picsum.photos/250/300" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
   </div>
 
   <script src="js/script.js"></script>
