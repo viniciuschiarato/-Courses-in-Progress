@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FORMULÁRIOS BOOTSTRAP</title>
+  <title>Accordion</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
@@ -67,66 +67,48 @@
 
 
 
-      <div class="col">
+      <div class="col mt-5">
 
-      <div class="row g-3">
-        
-          <div class="col">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">First Name</label>
-              <input type="text" class="form-control-plaintext" id="exampleFormControlInput1" value="Vinícius"  placeholder="Name" disabled>
+        <h2 class="mb-3" >Dúvidas frequentes</h2>
+
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button bg-info text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
             </div>
           </div>
-
-          <div class="col-6">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Email address</label>
-              <input type="email" class="form-control form-control-lg border-dark" id="exampleFormControlInput1" placeholder="name@example.com">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed bg-info text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
             </div>
           </div>
-
-          <div class="col">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Password</label>
-              <input type="password" class="form-control border-dark" id="exampleFormControlInput1" placeholder="8-10 characters">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed bg-info text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
             </div>
-          </div>
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-        <textarea class="form-control border-dark" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-
-      <div class="mb-3">
-        <label for="formFile" class="form-label">Default file input example</label>
-        <input class="form-control" type="file" id="formFile">
-      </div>
-
-      <label for="exampleDataList" class="form-label">Datalist example</label>
-      <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
-      <datalist id="datalistOptions">
-        <option value="San Francisco">
-        <option value="New York">
-        <option value="Seattle">
-        <option value="Los Angeles">
-        <option value="Chicago">
-      </datalist>
-
-      <div class="col-4">
-        <div class="row mt-5">
-          <div class="input-group mb-3">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
-            <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
           </div>
         </div>
-      </div>
-
-      <div  class="col-8 mt-5 mb-5">
-        <div class="form-floating mb-3">
-          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-          <label for="floatingInput">Email address</label>
-        </div>
-      </div>
 
     </div>
 
