@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+
+  <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #a102d1;"
+    aria-label="Fourth navbar example">
+    <div class="container">
+      <a class="navbar-brand" href="#">Expand at md</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+        aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown"
+              aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown04">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form role="search">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </div>
+    </div>
+    <div class="col-2" >
+      <button type="button" class="btn btn-primary position-relative">
+        Profile
+        <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+          <span class="visually-hidden">New alerts</span>
+        </span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="row mt-5">
+
+      <div class="col-lg-8  md-8 ">
+
+        <div class="card">
+
+          <div class="card-body">
+            <h1 class="mb-3"><strong>Build fast, responsive sites with Bootstrap</strong></h1>
+
+        <p class="fs-4">Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt
+          grid system and components, and bring projects to life with powerful JavaScript plugins.</p>
+
+        <a href="#exampleModal" data-bs-toggle="modal"style="background-color: #a102d1; border: 1px solid #a102d1" class="btn btn-primary btn-lg p-3">Get
+          Started</a> <!--modal ativado por link-->
+
+        <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-outline-secondary btn-lg p-3">Download</button>
+
+          </div>
+          
+        </div>
+
+      </div> 
+
+    </div>
+  
+  </div>
+
+  <!-- Modal button "GET STARTED" -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est laudantium impedit nihil aliquam fugiat, unde nam itaque nisi architecto illo neque eos facilis necessitatibus veniam accusamus nesciunt ab! Quaerat, debitis?</p>
+          <p>Minima suscipit, sapiente voluptas repellendus delectus nisi, debitis laboriosam magni minus doloribus quaerat reiciendis illo unde quis quos, aut consequatur! Perferendis necessitatibus error voluptate perspiciatis saepe eligendi, accusantium quidem modi!</p>
+          <p>Deserunt eaque reiciendis tempore voluptate iusto deleniti reprehenderit molestias voluptas quia velit necessitatibus, molestiae adipisci non. Optio dolorum aut, assumenda, ut ducimus odit incidunt doloribus, qui distinctio numquam tempora voluptatibus?</p>
+          <p>Voluptate suscipit reiciendis iusto ut, rerum repellat delectus molestias veritatis, adipisci dolore consequatur vero voluptatem nam non obcaecati, quia laborum soluta odit in natus. Ipsam ipsa voluptatem id nihil itaque.</p>
+          <p>Earum nihil quis fugit, corrupti eos facilis quaerat maiores quibusdam expedita molestiae labore perspiciatis. Maxime sapiente hic quidem minus totam vitae. Sit quaerat quibusdam quo recusandae accusantium eos vel nihil.</p>
+          <p>Fugit quia ea sunt nam, placeat quo hic magni! Maxime dolorem eos saepe? Aut error inventore tempora dolorum, nihil atque voluptates delectus officiis velit blanditiis numquam molestias enim deleniti assumenda?</p>
+          <p>Et minus explicabo amet nihil, similique ratione? Odit eveniet fugit nostrum necessitatibus quis at autem voluptate aliquid maxime, molestias fugiat libero! Exercitationem odit ab quibusdam a porro? Dolore, non. Magni.</p>
+          <p>Officiis consectetur, id nisi corrupti omnis dolorem est, rerum dicta fuga modi nihil possimus eos, libero pariatur quas nemo tempore in neque rem architecto suscipit. Ipsa officiis labore repellendus fugit.</p>
+          <p>Impedit quia doloribus, illum aperiam temporibus placeat dignissimos, ipsam id dicta fugit perferendis magnam nemo laboriosam sint inventore doloremque. Illum quasi qui eligendi aut neque error enim non dignissimos ab.</p>
+          <p>Ad aperiam ut velit sequi pariatur dolorum quia vero temporibus ratione qui architecto, quae laboriosam aspernatur sed alias ab repudiandae nobis eius non sunt excepturi libero eaque ipsa nisi. Aliquid.</p>
+          <p>Id est excepturi ipsam nisi et repellendus eligendi dignissimos nostrum obcaecati cupiditate laudantium exercitationem accusamus, culpa iure voluptatibus, dolorem soluta error earum commodi. Enim maxime consequatur modi voluptas repudiandae optio!</p>
+          <p>Quisquam, magni earum ea dolorum deleniti officia? Eos harum magnam nesciunt fugiat officiis dicta reprehenderit vitae, facere autem delectus repellat, similique ullam itaque, perferendis dolores laborum qui nam libero illum.</p>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal button "DOWNLOAD" -->
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal header "PROMOÇÃO"-->
+
+<div class="modal" id="promotional" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">PROMOÇÃO ESPECIAL</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="js/script.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    var modal = new bootstrap.Modal(document.getElementById('promotional'), {});
+
+    setTimeout(function(){modal.show()}, 10000);
+    
+  </script>
+
+</body>
+
+</html>
