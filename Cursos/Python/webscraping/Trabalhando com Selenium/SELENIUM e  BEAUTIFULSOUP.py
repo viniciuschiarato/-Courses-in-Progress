@@ -29,5 +29,3 @@ input_place.send_keys('São Paulo')
 input_place.submit()
 
 sleep(60)
-
-adthrjaed
