@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.options import Options
 from time import sleep
 
 options = Options()
-# options.add_argument('--headless')
+options.add_argument('--headless')  # rodar sem abrir a tela do navegador
 options.add_argument('window-size=375,667')
 
 browser = webdriver.Chrome(options=options)
@@ -52,9 +52,11 @@ sleep(3)
 
 button_search.click()
 
-sleep(60)
+sleep(5)
 
 page_content = browser.page_source
 
 site = BeautifulSoup(page_content, 'html.parser')
+
+print(site.prettify())
 
