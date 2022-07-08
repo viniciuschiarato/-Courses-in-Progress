@@ -8,7 +8,7 @@ from time import sleep
 
 options = Options()
 # options.add_argument('--headless')
-options.add_argument('window-size=400,800')
+options.add_argument('window-size=375,667')
 
 browser = webdriver.Chrome(options=options)
 
@@ -28,4 +28,33 @@ input_place = browser.find_element(By.XPATH, '//*[@id="/homes-1-input"]')
 input_place.send_keys('São Paulo')
 input_place.submit()
 
+sleep(3)
+
+button_skip = browser.find_element(By.XPATH, '//*[@id="accordion-body-/homes-2"]/div[2]/footer/button[1]')
+
+sleep(3)
+
+button_skip.click()
+
+sleep(3)
+
+button_add = browser.find_element(By.XPATH, '//*[@id="stepper-adults"]/button[2]')
+
+sleep(3)
+
+button_add.click()
+
+sleep(3)
+
+button_search = browser.find_element(By.XPATH, '//*[@id="vertical-tabs"]/div[3]/footer/button[2]')
+
+sleep(3)
+
+button_search.click()
+
 sleep(60)
+
+page_content = browser.page_source
+
+site = BeautifulSoup(page_content, 'html.parser')
+

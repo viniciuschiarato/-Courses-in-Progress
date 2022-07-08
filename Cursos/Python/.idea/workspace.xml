@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="59e1ca51-0885-4378-b749-203383c2330c" name="Changes" comment="add">
       <change beforePath="$PROJECT_DIR$/.idea/Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webscraping/Trabalhando com Selenium/SELENIUM e  BEAUTIFULSOUP.py" beforeDir="false" afterPath="$PROJECT_DIR$/webscraping/Trabalhando com Selenium/SELENIUM e  BEAUTIFULSOUP.py" afterDir="false" />
     </list>
@@ -38,7 +37,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "C:/Users/vinic_oc8tpk7/OneDrive/Documentos/Meus Projetos/-Courses-in-Progress/Cursos/Python",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -159,8 +158,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.SELENIUM e  BEAUTIFULSOUP" />
-        <item itemvalue="Python.teste" />
         <item itemvalue="Python.Primeiros Passos com SELENIUM" />
+        <item itemvalue="Python.teste" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.Busca Automatizada por Produtos" />
       </list>
@@ -339,5 +338,16 @@
     <MESSAGE value="test" />
     <MESSAGE value="add" />
     <option name="LAST_COMMIT_MESSAGE" value="add" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/webscraping/Trabalhando com Selenium/SELENIUM e  BEAUTIFULSOUP.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
