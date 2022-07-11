@@ -18,8 +18,6 @@ sleep(3)
 
 button = browser.find_element(By.XPATH, '//*[@id="site-content"]/div[1]/div/div/div/div/div/div/div[2]/div[1]/div/div[1]/div/div/div/div/div/div[1]/button')
 
-sleep(3)
-
 button.click()
 
 sleep(3)
@@ -32,23 +30,17 @@ sleep(3)
 
 button_skip = browser.find_element(By.XPATH, '//*[@id="accordion-body-/homes-2"]/div[2]/footer/button[1]')
 
-sleep(3)
-
 button_skip.click()
 
 sleep(3)
 
 button_add = browser.find_element(By.XPATH, '//*[@id="stepper-adults"]/button[2]')
 
-sleep(3)
-
 button_add.click()
 
 sleep(3)
 
 button_search = browser.find_element(By.XPATH, '//*[@id="vertical-tabs"]/div[3]/footer/button[2]')
-
-sleep(3)
 
 button_search.click()
 
@@ -58,8 +50,22 @@ page_content = browser.page_source  # capta todas as informações da pagina atu
 
 site = BeautifulSoup(page_content, 'html.parser')
 
-content = site.find('div', attrs={'style': "--transition-element_transition-delay:0ms; --transition-element_transition-duration:200ms;"})
+content = site.find('div', attrs={'itemprop': 'itemListElement'})
 
 print(content.prettify())
+
+content_description = content.find('meta', attrs={'itemprop': "name"})
+
+content_type = content.find('div', attrs={'id': 'title_41527353'})
+
+content_url = content.find('meta', attrs={'itemprop': "url"})
+
+print('------------------------------------')
+
+print('Descrição: ', content_description['content'])
+
+print('Tipo: ', )
+
+print('URL: ', content_url['content'])
 
 sleep(60)
