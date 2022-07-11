@@ -58,6 +58,8 @@ page_content = browser.page_source  # capta todas as informações da pagina atu
 
 site = BeautifulSoup(page_content, 'html.parser')
 
-print(site.prettify())
+content = site.find('div', attrs={'style': "--transition-element_transition-delay:0ms; --transition-element_transition-duration:200ms;"})
+
+print(content.prettify())
 
 sleep(60)
