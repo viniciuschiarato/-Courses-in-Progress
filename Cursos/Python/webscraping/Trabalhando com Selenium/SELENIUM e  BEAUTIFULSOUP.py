@@ -56,7 +56,7 @@ print(content.prettify())
 
 content_description = content.find('meta', attrs={'itemprop': "name"})
 
-content_type = content.find('div', attrs={'id': 'title_41527353'})
+content_type = content.find('span', attrs={'lang': 'pt'})
 
 content_url = content.find('meta', attrs={'itemprop': "url"})
 
@@ -64,7 +64,7 @@ print('------------------------------------')
 
 print('Descrição: ', content_description['content'])
 
-print('Tipo: ', )
+print('Tipo: ', content_type)
 
 print('URL: ', content_url['content'])
 
