@@ -1,0 +1,2 @@
+Incluir arquivo css e java script:
+Home Bootstrap > CDN files (copiar o link e abri-lo, salvar o conteudo nas pastas respectivas do projeto)
