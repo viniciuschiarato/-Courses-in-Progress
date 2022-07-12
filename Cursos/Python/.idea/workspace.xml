@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59e1ca51-0885-4378-b749-203383c2330c" name="Changes" comment="Add">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webscraping/Trabalhando com Selenium/SELENIUM e  BEAUTIFULSOUP.py" beforeDir="false" afterPath="$PROJECT_DIR$/webscraping/Trabalhando com Selenium/SELENIUM e  BEAUTIFULSOUP.py" afterDir="false" />
-    </list>
+    <list default="true" id="59e1ca51-0885-4378-b749-203383c2330c" name="Changes" comment="Add" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -341,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657557089537</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Add">
+      <created>1657570369575</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1657570369575</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
