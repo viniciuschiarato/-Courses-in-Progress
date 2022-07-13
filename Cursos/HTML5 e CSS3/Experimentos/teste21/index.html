@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Popovers</title>
+  <title>Progress bar</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
@@ -97,7 +97,7 @@
                 <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
               </li>
               <li class="nav-item" role="presentation" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="teste popover">
-                <button class="nav-link active" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
               </li>
 
               <li class="nav-item" role="presentation">
@@ -105,7 +105,7 @@
               </li>
 
               <li class="nav-item" role="presentation">
-                <button class="nav-link" id="criando-teste-tab" data-bs-toggle="tab" data-bs-target="#criando-teste-tab-pane" type="button" role="tab" aria-controls="criando-teste-tab-pane" aria-selected="false" >Criando teste</button>
+                <button class="nav-link active" id="criando-teste-tab" data-bs-toggle="tab" data-bs-target="#criando-teste-tab-pane" type="button" role="tab" aria-controls="criando-teste-tab-pane" aria-selected="false" >Criando teste</button>
               </li>
 
 
@@ -164,7 +164,7 @@
               </div>
 
 
-              <div class="tab-pane fade show active" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+              <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
 
                 <p>Conteúdo da <strong>contact</strong></p>
 
@@ -182,8 +182,13 @@
               </div>
 
 
-              <div class="tab-pane fade" id="criando-teste-tab-pane" role="tabpanel" aria-labelledby="teste-tab" tabindex="0">
+              <div class="tab-pane fade show active" id="criando-teste-tab-pane" role="tabpanel" aria-labelledby="teste-tab" tabindex="0">
                 <p>Conteúdo criado e <strong>testado</strong></p>
+
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
               </div>
 
 
