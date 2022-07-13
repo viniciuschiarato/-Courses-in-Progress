@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spinners</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Toasts</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
@@ -117,17 +116,23 @@
                   <div class="row mt-5">
                     <p>Conteúdo da <strong>home</strong></p>
 
-                    <nav aria-label="Page navigation example">
-                      <ul class="pagination">
-                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                      </ul>
-                    </nav>
+                    <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
 
-                    <div class="card">
+                    <div class="toast-container position-fixed bottom-0 end-0 p-3" data-bs-delay="10000">
+                      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                          <strong class="me-auto">Bootstrap</strong>
+                          <small>11 mins ago</small>
+                          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body">
+                          Hello, world! This is a toast message.
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="card mt-3">
                       <img src="https://picsum.photos/700/330" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -259,12 +264,25 @@
 
   </div>
 
-  <script src="js/script.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
+
   <script>
     const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
     const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
   </script>
+
+  <script>
+    const toastTrigger = document.getElementById('liveToastBtn')
+    const toastLiveExample = document.getElementById('liveToast')
+    if (toastTrigger) {
+      toastTrigger.addEventListener('click', () => {
+        const toast = new bootstrap.Toast(toastLiveExample)
+
+        toast.show()
+      })
+    }
+  </script>
+
 </body>
 
 </html>
