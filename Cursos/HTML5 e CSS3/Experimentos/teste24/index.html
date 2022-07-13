@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progress bar</title>
+  <title>Spinners</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
@@ -91,7 +91,7 @@
           <div class="card-body">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
-                <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
               </li>
               <li class="nav-item" role="presentation">
                 <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
@@ -105,14 +105,14 @@
               </li>
 
               <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="criando-teste-tab" data-bs-toggle="tab" data-bs-target="#criando-teste-tab-pane" type="button" role="tab" aria-controls="criando-teste-tab-pane" aria-selected="false" >Criando teste</button>
+                <button class="nav-link" id="criando-teste-tab" data-bs-toggle="tab" data-bs-target="#criando-teste-tab-pane" type="button" role="tab" aria-controls="criando-teste-tab-pane" aria-selected="false" >Criando teste</button>
               </li>
 
 
             </ul>
 
             <div class="tab-content" id="myTabContent">
-              <div class="tab-pane fade" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+              <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
                 <div class="container">
                   <div class="row mt-5">
                     <p>Conteúdo da <strong>home</strong></p>
@@ -132,7 +132,10 @@
                       <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <button class="btn btn-primary" type="button" disabled>
+                          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                          Loading...
+                        </button>
                       </div>
                     </div>
 
@@ -182,7 +185,7 @@
               </div>
 
 
-              <div class="tab-pane fade show active" id="criando-teste-tab-pane" role="tabpanel" aria-labelledby="teste-tab" tabindex="0">
+              <div class="tab-pane fade" id="criando-teste-tab-pane" role="tabpanel" aria-labelledby="teste-tab" tabindex="0">
                 <p>Conteúdo criado e <strong>testado</strong></p>
 
                 <div class="progress mt-2">
@@ -243,10 +246,11 @@
             </h5>
             <p class="card-text placeholder-glow">
               <span class="placeholder col-7"></span>
-              <span class="placeholder col-4"></span>
-              <span class="placeholder col-4"></span>
             </p>
-            <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-3"></a>
+            <button class="btn btn-primary" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </button>
           </div>
         </div>
       </div>
