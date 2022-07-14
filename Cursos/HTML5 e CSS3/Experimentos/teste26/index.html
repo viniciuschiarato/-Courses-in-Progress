@@ -114,9 +114,18 @@
               <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
                 <div class="container">
                   <div class="row mt-5">
-                    <p>Conteúdo da <strong>home</strong></p>
 
-                    <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+                    <h1>Tooltips</h1>
+
+                    <p class="muted">Placeholder text to demonstrate some <a href="#" data-bs-toggle="tooltip" title="Default tooltip">inline links</a> with tooltips. This is now just filler, no killer. Content placed here just to mimic the presence of <a href="#" data-bs-toggle="tooltip" title="Another tooltip">real text</a>. And all that just to give you an idea of how tooltips would look when used in real-world situations. So hopefully you've now seen how <a href="#" data-bs-toggle="tooltip" title="Another one here too">these tooltips on links</a> can work in practice, once you use them on <a href="#" data-bs-toggle="tooltip" title="The last tip!">your own</a> site or project.
+                    </p> 
+
+                    <button style="margin-bottom: 20px;" type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="tooltip">
+                      Tooltip on bottom
+                    </button>
+
+
+                    <button type="button" class="btn btn-primary" id="liveToastBtn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Click para abrir o Toast">Show live toast</button>
 
                     <div class="toast-container position-fixed bottom-0 end-0 p-3" data-bs-delay="10000">
                       <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
@@ -284,7 +293,8 @@
   </script>
 
   <script>
-    
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
   </script>
 
 </body>
