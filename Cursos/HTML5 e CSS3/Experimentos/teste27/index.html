@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tooltips</title>
+  <title>Helpers</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
@@ -115,9 +115,9 @@
                 <div class="container">
                   <div class="row mt-5">
 
-                    <h1>Tooltips</h1>
+                    <h1>Text truncation</h1>
 
-                    <p class="muted">Placeholder text to demonstrate some <a href="#" data-bs-toggle="tooltip" title="Default tooltip">inline links</a> with tooltips. This is now just filler, no killer. Content placed here just to mimic the presence of <a href="#" data-bs-toggle="tooltip" title="Another tooltip">real text</a>. And all that just to give you an idea of how tooltips would look when used in real-world situations. So hopefully you've now seen how <a href="#" data-bs-toggle="tooltip" title="Another one here too">these tooltips on links</a> can work in practice, once you use them on <a href="#" data-bs-toggle="tooltip" title="The last tip!">your own</a> site or project.
+                    <p class="muted d-inline-block text-truncate" style="max-width: 150px;">Placeholder text to demonstrate some <a href="#" data-bs-toggle="tooltip" title="Default tooltip">inline links</a> with tooltips. This is now just filler, no killer. Content placed here just to mimic the presence of <a href="#" data-bs-toggle="tooltip" title="Another tooltip">real text</a>. And all that just to give you an idea of how tooltips would look when used in real-world situations. So hopefully you've now seen how <a href="#" data-bs-toggle="tooltip" title="Another one here too">these tooltips on links</a> can work in practice, once you use them on <a href="#" data-bs-toggle="tooltip" title="The last tip!">your own</a> site or project.
                     </p> 
 
                     <button style="margin-bottom: 20px;" type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="tooltip">
@@ -145,13 +145,15 @@
                       
 
                       <div class="ratio ratio-16x9">
-                        <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
+
+                        <iframe src="https://www.youtube.com/embed/XMEKHyRfZ5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
                       </div>
 
 
                       <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text text-truncate"> <strong>HERE</strong>  Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <button class="btn btn-primary" type="button" disabled>
                           <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                           Loading...
