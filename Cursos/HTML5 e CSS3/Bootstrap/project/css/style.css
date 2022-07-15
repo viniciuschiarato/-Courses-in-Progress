@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --c0:#c5ebd6;
+    --c1:#83e1ad;
+    --c2:#3ddc84;
+    --c3:#2fa866;
+    --c4:#1a5c37;
+    --c5:#063d1e;
+
+    --font-default: Arial, Verdana, Helvetica, sans-serif;
+    --font-nav-title: 'Bebas Neue';
+}
+
+
+nav {
+    font-family: var(--font-nav-title);
+    margin: auto;
+    max-width: 1600px;
+    min-height: 100px;
+    max-height: 200px;
+    font-size: x-large;
+}
+
+
+#business-name { 
+    font-family: var(--font-nav-title);
+    font-size: 2em;
+    font-weight: bolder;
+}
