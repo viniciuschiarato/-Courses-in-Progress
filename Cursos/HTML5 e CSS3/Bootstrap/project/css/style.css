@@ -13,20 +13,38 @@
     --font-default: Arial, Verdana, Helvetica, sans-serif;
     --font-nav-title: 'Bebas Neue';
 }
-
-
-nav {
-    font-family: var(--font-nav-title);
+ header{
     margin: auto;
     max-width: 1600px;
-    min-height: 100px;
-    max-height: 200px;
-    font-size: x-large;
+ }
+
+ header > nav{
+    height: 100px;
+ }
+
+ body{
+    margin: auto;
+    max-width: 1600px;
+ }
+
+
+ .navbar-brand{
+    margin-left: 20px;
+    font-family: var(--font-nav-title);
+    font-size: xx-large;
+    font-weight: bolder;
 }
 
 
-#business-name { 
-    font-family: var(--font-nav-title);
-    font-size: 2em;
-    font-weight: bolder;
+#dark-page{
+    margin-right: 20px;
+    height: 46px;
+    width: 45px;
+}
+
+
+#flexSwitchCheckChecked{
+    margin-right: 10px;
+    width: 55px;
+    height: 30px;
 }
