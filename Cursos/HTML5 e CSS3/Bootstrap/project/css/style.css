@@ -52,3 +52,17 @@
 #initial{
     margin-top: 100px;
 }
+
+#princ{
+    width: 30px;
+    height: 30px;
+}
+
+#row-services{
+    margin: auto;
+}
+
+#services{
+    width: 260px;
+    height: 260px;
+}
