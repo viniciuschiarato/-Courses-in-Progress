@@ -1,8 +1,20 @@
-#include <stdio.h>
+int main(int argc, char** argv) {
+    char nome[30];
+    char endereco[30];
+    int idade;
+    
+    printf("Nome: \n");
+    scanf("%s", &nome);
+    
+    printf("Endereço: \n");
+    scanf("%s", &endereco);
 
-int main()
-{
-    printf("Hello World");
+    printf("Idade: \n");
+    scanf("%d", &idade);
+    
+    printf("\nNome: %s\n", nome);
+    printf("Endereço: %s\n", endereco);
+    printf("Idade: %d", idade);
 
     return 0;
 }
