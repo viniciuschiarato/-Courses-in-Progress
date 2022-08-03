@@ -8,15 +8,15 @@
 
 1)a
 2)a
-3)
+3)d
 4)b
 
 7. Adg1
 
 1)a
-2)c
+2)e x b
 3)d
-4)
+4)a
 
 8. Fórum
 
@@ -36,14 +36,14 @@ Podemos usar um algoritmo para executar tarefas simples em nosso dia a dia como,
 Algoritmo para lavar roupa: 
 
 1.  Separar a roupa em dois grupos (grupo1: claras e grupo2: escuras); 
-2.  Selecioinar o grupo que será lavado; 
+2.  Selecionar o grupo que será lavado; 
 3.  Ligar a máquina de lavar; 
 4.  Colocar as roupas dentro da máquina; 
-5.  Selecionar o modo de lavagem basiado no tipo de roupa;
+5.  Selecionar o modo de lavagem baseado no tipo de roupa;
 6.  Colocar sabão em pó ou líquido;
 7.  Aguardar a conclusão dos ciclos de lavagem;
 8.  Retirar a roupa da máquina; 
-9.  Esterder todas as roupas no varal;
+9.  Estender todas as roupas no varal;
 
 Algoritmo para começar a trabalhar:
 
