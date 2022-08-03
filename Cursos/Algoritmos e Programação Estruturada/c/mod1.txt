@@ -1,0 +1,85 @@
+1. Abrir CW
+2. Ler CW
+3. Abrir slides
+4. Abrir vídeo aula 
+5. Acompanhar slides com a vídeo aula
+
+6. Aap1
+
+1)a
+2)a
+3)
+4)b
+
+7. Adg1
+
+1)a
+2)c
+3)d
+4)
+
+8. Fórum
+
+a) Definição do que é pseudocódigo:
+
+O pseudocódigo é uma ferramenta que auxilia a programação, ela pode ser escrita em palavras similares ao inglês ou português para facilitar a interpretação e desenvolvimento de um programa. 
+Ele se assemelha muito aos comandos das linguagens de programação. O intuito é facilitar a interpretação e desenvolvimento de um programa.
+
+b) Definição do que são algoritmos;
+
+Sequência ordenada de passos que deve ser seguida para a realização de uma tarefa ou problema. Os algoritmos são as bases para criação de um programa de computador, onde diversas aplicações poderão ocorrer.
+
+c) Demonstrar em exemplos onde temos aplicação de algoritmos em nosso dia a dia;
+
+Podemos usar um algoritmo para executar tarefas simples em nosso dia a dia como, lavar roupa e também para iniciar o trabalho, exemplo:
+
+Algoritmo para lavar roupa: 
+
+1.  Separar a roupa em dois grupos (grupo1: claras e grupo2: escuras); 
+2.  Selecioinar o grupo que será lavado; 
+3.  Ligar a máquina de lavar; 
+4.  Colocar as roupas dentro da máquina; 
+5.  Selecionar o modo de lavagem basiado no tipo de roupa;
+6.  Colocar sabão em pó ou líquido;
+7.  Aguardar a conclusão dos ciclos de lavagem;
+8.  Retirar a roupa da máquina; 
+9.  Esterder todas as roupas no varal;
+
+Algoritmo para começar a trabalhar:
+
+1.  Acordar;
+2.  Tomar banho;
+3.  Trocar de roupa;
+4.  Tomar café;
+5.  Ligar o computador, 
+6.  Logar na rede da empresa; 
+7.  Abrir o email.
+
+d) Construir em pseudocódigo um algoritmo que faça a leitura de três nomes, armazene e por final imprima na tela os nomes armazenados.
+
+
+Algoritmo "leitura de Nomes"
+
+var
+	char: nome1, nome2, nome3
+início
+
+	escreva("Digite seu nome: ");
+
+	leia(nome1);
+
+	escreva("Digite seu nome: ");
+
+	leia(nome2);
+
+	escreva("Digite seu nome: ");
+
+	leia(nome3);
+	
+	escreva("nome: ", nome1);
+
+	escreva("nome: ", nome2);
+
+	escreva("nome: ", nome3);
+
+fim do algoritmo
