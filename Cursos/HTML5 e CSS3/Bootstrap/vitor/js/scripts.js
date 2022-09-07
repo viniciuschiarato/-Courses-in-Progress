@@ -23,7 +23,7 @@ function diminuir(){
 function tema_escuro(){
 
     //body.classList.add('bg-dark')
-    body.style.background = '#15202B'
+    body.style.background = '#white'
     div_tom_dif.style.background = '#1D2A35'
 
     for(p of paragrafos){
