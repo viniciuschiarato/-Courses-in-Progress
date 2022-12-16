@@ -17,12 +17,13 @@
             input_text = document.querySelector('input#txt')
             result = document.querySelector('div.res')
             text = (input_text.value)
-            if (text == 'Brasil'){
+            /*if (text == 'Brasil' || text == 'brasil' ){
                 result.innerHTML = `<p>O passageiro é brasileiro.</p>`
             }
             else{
                 result.innerHTML = `<p>O passageiro é estrangeiro.</p>`
-            }
+            }*/
+            result.innerHTML = (typeof text) 
         }
     </script>
 </body>
