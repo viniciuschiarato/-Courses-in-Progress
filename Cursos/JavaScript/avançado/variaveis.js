@@ -6,4 +6,11 @@
 // Case-sensitive (maiusculas e minúsculas fazem diferença)
 // Não é possivel redeclarar variáveis criadas com LET
 // Não é possivel alterar o valor contido por uma variável do tipo CONST
-// VAR está em desuso usa-se LET ou  CONST
+// VAR está em desuso usa-se LET ou  CONST  
+// Todo valor fora de aspas é tratado como number pela tipagem dinâmica do javascript
+// Verificar os tipos | console.log(typeof(variavel)) 
+
+const firstNumber = '5' //String
+const secondNumber = 10 //Number
+
+console.log(typeof(firstNumber+secondNumber)) //String + Number = String
