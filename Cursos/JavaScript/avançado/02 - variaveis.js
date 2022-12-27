@@ -10,7 +10,11 @@
 // Todo valor fora de aspas é tratado como number pela tipagem dinâmica do javascript
 // Verificar os tipos | console.log(typeof(variavel)) 
 
+/*
 const firstNumber = '5' //String
 const secondNumber = 10 //Number
 
 console.log(typeof(firstNumber+secondNumber)) //String + Number = String
+*/
+
+// Template strings console.log(`Eu ${variavelNome}`)
