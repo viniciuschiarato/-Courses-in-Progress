@@ -18,3 +18,5 @@ console.log(typeof(firstNumber+secondNumber)) //String + Number = String
 */
 
 // Template strings console.log(`Eu ${variavelNome}`)
+
+// MDN --> https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/A_first_splash

@@ -1,7 +1,5 @@
 //Objeto date
 
-// https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Date
-
 //js trabalha com milésimos de segundos
 
 const umaHora = 60 * 60 * 1000// 60 segundos 60 vezes, o mil pq o js interpreta o valar como milisegundos.
@@ -33,3 +31,5 @@ const dataDefinida3 = new Date('2019-04-20T20:20:59');
 console.log(dataDefinida3.toString()); 
 
 //13:00
+
+// MDN --> https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Date
